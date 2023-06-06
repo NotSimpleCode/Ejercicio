@@ -18,6 +18,16 @@ body {
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
 }
+
+.login-box .icon {
+    color: var(--baby-blue);
+    line-height: 45px;
+    font-size: 25px;
+    position: absolute;
+    right: 22px;
+    top: 45px;
+}
+
 .login-box h2 {
     margin: 0 0 30px;
     padding: 0;
@@ -183,14 +193,7 @@ body {
     padding: 0;
     box-sizing: border-box;
   }
-  .icon i {
-    color: var(--baby-blue);
-    line-height: 45px;
-    font-size: 25px;
-    position: absolute;
-    right: 22px;
-    top: 45px;
-  }
+  
   
   .valid-checks {
     margin: 20px 0;
@@ -200,6 +203,13 @@ body {
     transition: .2s ease;
     opacity: 1;
   }
+  .valid-checks {
+    position: absolute;
+    top: 40%;
+    left: 67%;
+    transform: translate(-10%,-10%);
+    box-sizing: border-box;
+}
   
   .valid-checks ul {
     list-style-type: none;

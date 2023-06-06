@@ -140,6 +140,6 @@ function resetValues() {
   numberCount = 0;
 
   for (let i = 0; i < checklist.length; i++) {
-  checklist[i].classList.remove("checked");
+    checklist[i].classList.remove("checked");
   }
 }
