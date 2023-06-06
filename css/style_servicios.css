@@ -1,0 +1,114 @@
+html, body {
+    font-family: raleway, sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    background-color: #1a1e23;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .src-box {
+    font-size: 20px;
+    border: solid .25em #fff;
+    display: inline-block;
+    position: relative;
+    border-radius: 2.5em;
+  }
+  .src-box input[type=text] {
+    font-family: inherit;
+    font-weight: bold;
+    color: #fff;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 2.5em;
+    transition: width 800ms cubic-bezier(.68, -.55, .27, 1.55) 150ms;
+  }
+  .src-box input[type=text]:focus {
+    outline: none;
+  }
+  .src-box input[type=text]:focus,
+  .src-box input[type=text]:not(:placeholder-shown) {
+    width: 18em;
+    transition: width 800ms cubic-bezier(.68, -.55, .27, 1.55);
+  }
+  .src-box input[type=text]:focus + button[type=reset],
+  .src-box input[type=text]:not(:placeholder-shown) + button[type=reset] {
+    transform: rotate(-45deg) translateY(0);
+    transition: transform 150ms ease-out 800ms;
+  }
+  .src-box input[type=text]:focus + button[type=reset]::after,
+  .src-box input[type=text]:not(:placeholder-shown) + button[type=reset]::after {
+    opacity: 1;
+    transition: top 150ms ease-out 950ms,
+                right 150ms ease-out 950ms,
+                opacity 150ms ease 950ms;
+  }
+  .src-box button[type=reset] {
+    background-color: transparent;
+    width: 1.4em;
+    height: 1.4em;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: .55em;
+    right: .55em;
+    transform: rotate(-45deg) translateY(2.2em);
+    transition: transform 150ms ease-out 150ms;
+  }
+  .src-box button[type=reset]::before,
+  .src-box button[type=reset]::after {
+    content: "";
+    background-color: #fff;
+    width: .3em;
+    height: 1.4em;
+    border-radius: 10px;
+    position: absolute;
+  }
+  .src-box button[type=reset]::after {
+    transform: rotate(90deg);
+    opacity: 0;
+    transition: transform 150ms ease-out, opacity 150ms ease-out;
+  }
+
+
+/** truck
+**/
+.truck-button {
+    --color: #fff;
+    --background: #2B3044;
+    --tick: #16BF78;
+    --base: #0d0f18;
+    --wheel: #2b3044;
+    --wheel-inner: #646b8c;
+    --wheel-dot: #fff;
+    --back-inner:#362a89;
+    --back-inner-shadow: #2d2468;
+    --front: #a6accd;
+    --front-shadow: #535a79;
+    --front-light: #fff8b1;
+    --window: #2b3044;
+    --window-shadow: #404660;
+    --street: #646b8c;
+    --street-fill: #404660;
+    --box: #dcb97a;
+    --box-shadow: #b89b66;
+    padding: 12px 0;
+    width: 172px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
