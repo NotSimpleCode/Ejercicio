@@ -86,31 +86,5 @@ html, body {
   }
 
 
-/** truck
-**/
-.truck-button {
-    --color: #fff;
-    --background: #2B3044;
-    --tick: #16BF78;
-    --base: #0d0f18;
-    --wheel: #2b3044;
-    --wheel-inner: #646b8c;
-    --wheel-dot: #fff;
-    --back-inner:#362a89;
-    --back-inner-shadow: #2d2468;
-    --front: #a6accd;
-    --front-shadow: #535a79;
-    --front-light: #fff8b1;
-    --window: #2b3044;
-    --window-shadow: #404660;
-    --street: #646b8c;
-    --street-fill: #404660;
-    --box: #dcb97a;
-    --box-shadow: #b89b66;
-    padding: 12px 0;
-    width: 172px;
-    cursor: pointer;
-    text-align: center;
-    position: relative;
-}
+
 
